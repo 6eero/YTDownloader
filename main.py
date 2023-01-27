@@ -17,9 +17,11 @@ from datetime import datetime
 
 
 def start(update: Update, context: CallbackContext):
-    update.message.reply_text("Benvenuto/a nel mio bot per scaricare musica da YouTube")
+    update.message.reply_text("Benvenuto/a nel mio bot per scaricare musica da YouTube!")
+    update.message.reply_text("Inviami /scarica + il link del video con l'audio che vuoi scaricare per iniziare ;)")
+
 def unknown(update: Update, context: CallbackContext):
-    update.message.reply_text("Sorry '%s' is not a valid command" % update.message.text)
+    update.message.reply_text("'%s' non é un comando valido" % update.message.text)
 
 def yt_downloader(link):
 
